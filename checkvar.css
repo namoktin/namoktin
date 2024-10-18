@@ -1,0 +1,420 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+html{
+	scroll-behavior: smooth;
+}
+#hearer{
+	background: black;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+	z-index: 1;
+}
+.heard{
+	padding: 0px 16px;
+	line-height: 42.5px;
+}
+#hearer-one{
+	display: flex;
+}
+.heard:hover{
+	color: black;
+	background: white;
+}
+#hearer-two{
+	padding: 0px 16px;
+	line-height: 42.5px;
+}
+#hearer-two:hover{
+	background-color: red;
+}
+.heard-un{
+	display: none;
+	position: absolute;
+	transform: translateX(-16px);
+}
+.heard-un-li{
+	background: white;
+	padding-left: 16px;
+	padding-right: 32px;
+}
+.heard-un-li:hover{
+	background: salmon;
+}
+.heard-on:hover .heard-un{
+	display: block;
+}
+#imgg{
+	position: relative;
+	padding-top: 42.5px;
+}
+img{
+	width: 100%;
+}
+#imgg-content{
+	position: absolute;
+	color: white;
+	bottom: 0px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#imgg-h1{
+	padding: 16px 0px;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+#imgg-p{
+	padding-bottom: 16px;
+}
+/*theband*/
+#theband{
+	margin: auto;
+	width: 800px;
+	padding: 32px 0px;
+}
+#theband-title{
+	justify-content: center;
+	font-weight: 400;
+	font-family: "Lato", sans-serif;
+	letter-spacing: 4px;
+	text-align: center;
+	font-size: 32.5px;
+	padding: 8px 0px;
+}
+#theband-indam{
+	opacity: 0.7;
+	text-align: center;
+	font-style: italic;
+    font-family: "Lato", sans-serif;
+	padding: 8px 0px;
+}
+#theband-content{
+	text-align: justify;
+	line-height: 20px;
+	padding: 8px 0px;
+	font-size: 15px;
+    font-family: "Lato", sans-serif;
+}
+#theband-character{
+	padding: 32px 0px;
+	display: flex;
+	justify-content: space-around;
+}
+.theband-character-items{
+	padding: 0px 50px;
+}
+.theband-character-items div{
+	text-align: center;
+	padding: 15px 0px;
+}
+.theband-character-items img{
+	border-radius: 4px;
+}
+/*tourdate*/
+#nentourdate{
+	width: 100%;
+	background-color: black;
+	padding: 32px 0px;
+}
+#tourdate{
+	width: 800px;
+	margin: auto;
+	padding: 32px 0px;
+	background-color: black;
+}
+#tourdate-title{
+	font-size: 32.5px;
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	letter-spacing: 4px;
+	padding: 16px 0px;
+	color: white;
+
+}
+#tourdate-indam{
+	opacity: 0.7;
+	text-align: center;
+	font-style: italic;
+	font-family: "Lato", sans-serif;
+	color: white;
+	padding: 16px 0px;
+}
+#tourdate-select{
+	display: flex;
+	flex-direction: column;
+	padding: 32px 0px;
+}
+.tourdate-select-soldout{
+	border: 1px solid rgba(221, 221, 221, 255);
+	display: flex;
+	background-color: white;
+	justify-content: flex-start;
+	align-items: center;
+}
+.tourdate-select-muc{
+	opacity: 0.7;
+	margin: 0px 16px;
+	font-style: italic;
+	line-height: 22.5px;
+	padding: 8px 16px;
+}
+.soldout{
+	background-color: red;
+	color: white;
+	line-height: 22.5px;
+	padding: 0px 8px;
+}
+#tourdate-select-ok{
+	display: flex;
+	align-items: center;
+	background-color: white;
+	justify-content: space-between;
+}
+#so{
+	padding: 0px 8px;
+	border-radius: 20px;
+	margin-right: 16px;
+	background-color: black;
+	color: white;
+}
+#buyticket{
+	display: flex;
+	justify-content: space-between;
+}
+.buyticket-spector{
+	margin: 0px 20px;
+}
+.buyticket-show{
+	display: flex;
+	flex-direction: column;
+}
+.buyticket-show img:hover {
+	opacity: 0.6;
+}
+.buyticket-show-nen{
+	background-color: white;
+	padding: 16px 10px;
+}
+.buyticket-show-title{
+	font-size: 20px;
+	font-weight: 700;
+}
+.buyticket-show-indam{
+	opacity: 0.7;
+	padding: 16px 0px;
+}
+.buyticket-show-content{
+	line-height: 20px;
+}
+.buyticket-show-buy{
+	background-color: black;
+	color: white;
+	width: 50%;
+	line-height: 40px;
+	text-align: center;
+	margin: 16px 0px;
+}
+.buyticket-show-buy:hover{
+	background-color: gray;
+}
+/*contact*/
+#contact{
+	padding: 40px 0px;
+	margin: 0px auto;
+	width: 800px;
+}
+#contact-title{
+	font-size: 36.5px;
+	letter-spacing: 4px;
+	padding: 16px 0px;
+	font-weight: 300;
+	text-align: center;
+}
+#contact-indam{
+	opacity: 0.7;
+	padding: 16px 0px;
+	font-style: italic;
+	text-align: center;
+}
+#contact-chia{
+	display: flex;
+	padding: 16px 0px;
+	padding-bottom: 32px;
+	justify-content: space-between;
+}
+.contact-trai-icon{
+	font-size: 1.2em;
+	padding: 4px 0px;
+}
+.contact-trai-icon i{
+	padding: 0px 16px;
+}
+#contact-phai-tren{
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0px;
+}
+#contact-phai-tren input{
+	width: 42%;
+	line-height: 22.5px;
+	border: gray 1px solid;
+	padding: 8px;
+}
+#contact-phai-giua{
+	padding-bottom: 16px;
+}
+#contact-phai-giua input{
+	padding: 8px;
+	line-height: 22.5px;
+	border: gray 1px solid;
+	box-sizing: border-box;
+	width: 100%;
+}
+#contact-phai-duoi{
+	display: flex;
+	justify-content: flex-end;
+}
+#contact-phai-duoi button{
+	padding: 12px;
+	background-color: black;
+	border: none;
+	color: white;
+}
+/*map*/
+#map{
+	width: 100%;
+	opacity: 0.7;
+}
+/*power*/
+#power{
+	padding: 40px 0px;
+}
+#power-icon{
+	padding: 16px 0px;
+	text-align: center;
+}
+#power-icon i{
+	font-size: 1.3em;
+	opacity: 0.7;
+}
+#power-icon i:hover{
+	opacity: 0.4;
+}
+#power-edit{
+	font-size: 1em;
+	padding: 16px 0px;
+	opacity: 0.7;
+	text-align: center;
+}
+#power-edit a{
+	color: black;
+}
+/*modal*/
+.modal{
+	position: fixed;
+	display: none;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	top: 0;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, .4);
+}
+#modal-bang{
+	width: 800px;
+	padding-top: 100px;
+	animation: modaldichuyen ease 0.3s;
+}
+#modal-bang-head{
+	display: flex;
+	height: 140px;
+	background-color: #009688;
+}
+#modal-bang-title{
+	flex: 19;
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 1.5em;
+	align-items: center;
+}
+#modal-bang-head-close{
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+#modal-bang-head-close button{
+	padding: 16px;
+	background-color: #009688;
+	border: none;
+	color: white;
+}
+#modal-bang-head-close button:hover{
+	background-color: dimgray;
+	color: black;
+}
+#modal-bang-than{
+	background-color: white;
+	padding: 16px;
+}
+#modal-bang-than input{
+	margin: 16px 0px;
+	padding: 16px;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 15px;
+	border: 1px dimgray solid;
+}
+#modal-bang-pay{
+	width: 100%;
+	text-align: center;
+	background-color: #009688;
+	padding: 16px 0px;
+	color: white;
+}
+#modal-bang-duoi{
+	display: flex;
+	background-color: white;
+	padding: 16px;
+	box-sizing: border-box;
+	justify-content: space-between;
+}
+#modal-bang-duoi button{
+	background-color: orangered;
+	border: none;
+	color: white;
+	padding: 10px;
+}
+.on{
+	display: flex;
+}
+@keyframes modaldichuyen{
+	from{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@keyframes modalchuyen{
+	from{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	to{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+}
