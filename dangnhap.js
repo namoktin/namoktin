@@ -12,4 +12,3 @@ tat.onclick = ()=>{
 	}
 	,700);
 }
-import chichi from './song/modul.js'
